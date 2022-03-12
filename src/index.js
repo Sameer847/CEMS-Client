@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // All CSS
-import './index.css';
+import './index.scss';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // All JS
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
