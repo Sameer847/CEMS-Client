@@ -1,0 +1,12 @@
+.text-darkorange {
+    color: #ff771c;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+    transition: .3s ease-out;
+
+    &:hover {
+        box-shadow: 0px 0px 14px #0000002f;
+    }
+}

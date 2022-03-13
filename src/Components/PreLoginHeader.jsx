@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Navigate, NavLink, Outlet, useNavigate } from 'react-router-dom'
+import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
 
 const Header = () => {
 
@@ -12,16 +12,16 @@ const Header = () => {
                     <Link to={'/'} className='navbar-brand fw-bold fs-2 font-pacifico'>Happenings</Link>
                     <div className="collapse navbar-collapse">
                         <ul className="navbar-nav ms-auto">
-                            <li className="nav-item">
+                            <li className="nav-item pe-3">
                                 <NavLink to={'/'} className="nav-link fw-500">Home</NavLink>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item pe-3">
                                 <NavLink to={'/events'} className="nav-link fw-500">Events</NavLink>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item pe-3">
                                 <NavLink to={'/contact'} className="nav-link fw-500">Contact</NavLink>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item pe-3">
                                 <NavLink to={'/about-us'} className="nav-link fw-500">About</NavLink>
                             </li>
                             <li className="nav-item">

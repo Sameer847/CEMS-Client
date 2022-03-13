@@ -1,9 +1,19 @@
 import React from 'react'
+import Event from './Components/Event'
+import './events.scss'
 
 const Events = () => {
   return (
-    <div className="container py-3">
-      <h1>Events</h1>
+    <div className="py-3 bg-light">
+      <div className="container">
+        <h2>Popular Events</h2>
+        <div className="row">
+          <Event />
+          <Event />
+          <Event />
+          <Event />
+        </div>
+      </div>
     </div>
   )
 }

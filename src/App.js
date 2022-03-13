@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Header from './Components/Header';
+import Header from './Components/PreLoginHeader';
 import About from './Screens/About/About';
 import Login from './Screens/Auth/Login';
 import Register from './Screens/Auth/Register';
