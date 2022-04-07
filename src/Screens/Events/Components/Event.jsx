@@ -1,28 +1,29 @@
 import React from 'react'
-import eventImage from '../../../assets/images/event-images/madads.jpg'
+import eventImage from '../../../assets/images/No_Image_Available.jpg'
 
-const Event = () => {
+const Event = ({eventName, eventDate, eventDescription, eventFees, eventCategory, eventTotalParticipants}) => {
     return (
         <div className="col-md-4 mb-4">
             <div className="bg-white rounded p-3 cursor-pointer">
                 <div className="event-image">
-                    <img src={eventImage} alt="" className='w-100 rounded' />
+                    <img src={eventImage} alt="" height={200} className='w-100 rounded' />
                 </div>
                 <div className="event-content mt-3">
                     <h4 className="fw-bold">
-                        MAD ADS, College Days.
+                        {eventName}
                     </h4>
                     <p className="text-darkorange fw-500 mb-2">
-                        Fri, Mar 18, 11:30 AM
+                        {eventDate}
                     </p>
                     <p className="form-text text-secondary mb-2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, unde? Quisquam, unde...
+                        {eventDescription}
                     </p>
+                    <p className="fw-bold">Fees: {eventFees} INR</p>
                     <div className="d-flex align-items-center form-text text-dark">
                         <i className="material-icons me-1 fs-6">category</i>
-                        Management
+                        {eventCategory}
                         <i className="material-icons me-1 fs-5 ms-3">people</i>
-                        76 Participants
+                        {eventTotalParticipants} Participants
                     </div>
                     <div className="text-end mt-2">
                         <button className="btn text-primary rounded-pill">View Details...</button>
